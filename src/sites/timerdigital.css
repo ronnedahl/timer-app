@@ -1,0 +1,58 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.timer-digital-container {
+    width: 40vw;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgb(182, 179, 229,0.9) 0%, rgba(50,50,219,0.9) 35%, rgba(0,212,255,0.9) 60%);
+    margin: 0 auto;
+    position: relative;
+}
+
+.timer-digital-container__inner {
+    max-width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
+.timer-digital-container__counter{
+    scale:1.5;
+    margin-top:-3rem;
+}
+
+.timer-digital-container__inner h1{
+    font-size:3rem;
+    
+}
+
+.timer-digital-container__clock {
+    position: relative;
+   }
+ 
+
+.timer-digital-container__button{
+    position:absolute;
+    bottom:0;
+    margin-bottom:5rem;
+}
+
+@media(max-width: 765px){
+    .timer-digital-container{
+        width:100vw;
+        height: 100vh;
+    }
+    .timer-digital-container__inner h1{
+        font-size: 2rem;
+    }
+    .timer-digital-container__counter{
+        scale:1;
+    }
+}

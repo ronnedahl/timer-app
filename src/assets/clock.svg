@@ -1,0 +1,21 @@
+<svg width="278" height="278" viewBox="0 0 278 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_839_0)">
+    <path d="M139.169 11.158V0.89389" stroke="#222222" stroke-width="1" stroke-miterlimit="10" stroke-linecap="round"/>
+    <!-- Markeringar runt urtavlan -->
+    <!-- Alla andra markeringar som redan finns -->
+    <path d="M125.848 11.8468L124.78 1.64398" stroke="#222222" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+    <path d="M112.672 13.9288L110.551 3.89429" stroke="#222222" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+    <!-- ... -->
+    <path d="M152.33 266.153L153.398 276.364" stroke="#222222" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+    <path d="M165.506 264.071L167.635 274.106" stroke="#222222" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+    <!-- Fler markeringar ... -->
+  </g>
+  <!-- Den centrala punkten -->
+  <ellipse cx="7.98555" cy="7.9858" rx="7.98555" ry="7.9858" transform="matrix(1 -7.0755e-09 0.00359053 0.999994 131 131)" fill="black"/>
+  <ellipse cx="4.98563" cy="4.98578" rx="4.98563" ry="4.98578" transform="matrix(1 -7.0755e-09 0.00359053 0.999994 134.011 134)" fill="#555555"/>
+  <defs>
+    <clipPath id="clip0_839_0">
+      <rect width="278" height="278" fill="white"/>
+    </clipPath>
+  </defs>
+</svg>

@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    background-color: #333;
+}
+
+h1{
+    color:#000;
+    margin-top:3rem;
+    scale:2;
+}
+
+.settimer-container {
+    position: relative;
+    width: 40vw;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgb(182, 179, 229) 0%, rgba(50,50,219,1) 35%, rgba(0,212,255,1) 60%);
+    margin: 0 auto;
+    
+
+}
+
+.settimer-container__inner {
+    max-width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+.settimer-container__inner img{
+    cursor: pointer;
+}
+
+.settimer-container__change-minutes-container {
+    display: flex;
+    flex-shrink: 0;
+    transform:scale(2)
+}
+
+.settimer-container__big-number {
+    border: 3px solid green;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1.5rem;
+    min-width:130px;
+    
+}
+
+.settimer-container__big-number h5 {
+    font-size: 5rem;
+    font-weight: 800;
+    margin-top: -1rem;
+}
+
+.settimer-container__big-number p {
+    margin-top: -1rem
+}
+
+.settimer-container__left-increase-img {
+    margin-right: 2rem;
+}
+
+.settimer-container__right-decrease-img {
+    margin-left: 2rem;
+}
+
+.settimer-container__button{
+    position: absolute;
+    bottom:0;
+    margin-bottom:5rem;
+}
+
+@media(max-width:765px) {
+
+    .settimer-container {
+        width: 100vw;
+        height: 100vh;
+    }
+    .settimer-container__change-minutes-container{
+        transform: scale(1);
+    }
+}

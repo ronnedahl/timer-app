@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.timer-analog-container {
+    width: 40vw;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgb(182, 179, 229) 0%, rgba(50, 50, 219, 1) 35%, rgba(0, 212, 255, 1) 60%);
+    margin: 0 auto;
+    position: relative;
+}
+
+.timer-analog-container__inner {
+    max-width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.timer-analog-container__clock {
+    position: relative;
+    scale: 2;
+}
+
+/* punkten som är i mitten */
+.timer-analog-container__clock::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mark {
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background-color: #000;
+    top: 0;
+    left: 50%;
+    transform-origin: 50% 100%;
+}
+
+/* klockans pekare */
+.hand {
+    position: absolute;
+    width: 4px;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    transform-origin: top;
+    transform: translateX(5%, 10%);
+    transform: rotate(180deg)
+}
+
+.timer-analog-container__second {
+    height: 60px;
+}
+
+.timer-analog-container__minute {
+    height: 90px;
+}
+
+
+
+.timer-analog-container__clock.mark {
+
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background-color: #000;
+    top: 0;
+    left: 50%;
+    transform-origin: 50% 100%;
+}
+
+.timer-analog-container__button {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5rem;
+}
+
+@media(max-width: 765px) {
+    .timer-analog-container {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .timer-analog-container__clock {
+        scale: 1;
+    }
+}
